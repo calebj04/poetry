@@ -1,0 +1,91 @@
+html {
+  background: black;
+}
+
+body {
+  /* TODO make the background of the page black and the font colour white */
+  background: black;
+  color: white;
+  height: 115vh;
+}
+
+.poem-wrapper {
+  /* TODO centre the text in the poem-wrapper div and choose a new font */
+  font: sans-serif;
+  text-align: center;
+}
+
+.poem {
+  display: inline-block;
+
+  /* TODO add a white border to the poem and some padding so the content isn't right up against the edge  */
+  border-style: solid;
+  padding: 10px;
+}
+
+/* TODO add css to style the poem title and author name, you should, as a minimum, change the font size and consider adding further font styles */
+
+.poem-title {
+  font-family: "Edu SA Hand", cursive;
+  font-size: 2rem;
+}
+.poem-author {
+  font-family: "Edu SA Hand", cursive;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/* TODO style the poem content as you wish */
+.poem-content {
+  font-family: "Edu SA Hand", cursive;
+  font-size: 1.25rem;
+}
+
+/* TODO add css so that any unordered lists inside a div with class poem do not have bullet points */
+.poem ul {
+  list-style-type: none;
+}
+
+.controls {
+  /* OPTIONAL add further styling to the controls */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  /* TODO make the corners of the button rounded */
+  font-size: 1.1em;
+  border-radius: 20px;
+}
+
+/* TODO add css styling so that one (and only one!) of your poems is displayed differently to the others */
+.special-verse {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  transition: transform 0.02s ease-in-out;
+}
+
+.special-verse:hover {
+  transform: scale(1.025);
+}
+
+.special-poem {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.special-body {
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+}

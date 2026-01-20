@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A Poem</title>
+
+    <!-- Add link to a css style sheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Add link to a fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="controls">
+      <button type="button" id="display-next-poem-button">
+        Display Next Poem
+      </button>
+      <!-- TODO - Add a button to display the next line of the poem -->
+      <button type="button" id="display-next-line-button">
+        Display Next Line
+      </button>
+    </div>
+    <div class="poem-wrapper">
+      <div class="poem" id="camera-obscura">
+        <h1 class="poem-title"></h1>
+        <h2 class="poem-author"></h2>
+
+        <div class="poem-content"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
